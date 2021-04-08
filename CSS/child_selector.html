@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Child Selector</title>
+<style>
+section > article, marquee	{
+	font-size:26px;
+	font-weight:bolder;
+	color:white;
+	font-style:oblique;
+	background:maroon;
+}
+section > h2 {
+	font-size:40px;
+	font-weight:bolder;
+	color:purple;
+	font-style:italic;
+	background:ActiveBorder;
+
+	
+}
+</style>
+</head>
+
+<body>
+<h1>CHILD SELECTOR</h1>
+<section>
+<h2>Subheading 1</h2>
+<div>
+<article>Article which is inside div which is inside Section.
+</article>
+</div>
+</section>
+
+<section>
+<h2>Subheading 1</h2>
+
+<article>
+Article as a direct child of the SECTION element.
+</article>
+
+<marquee>This is my style!!!</marquee>
+</section>
+
+</body>
+
+</html>
