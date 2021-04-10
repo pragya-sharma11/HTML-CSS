@@ -1,0 +1,31 @@
+div{
+    background-color: blue;
+    margin: 30px;
+    width: 50px;
+    height: 30px;
+}
+.one{
+    transform: scale(1, 1);
+}
+.two{
+    /*
+    rotate() , rotateZ() are same thing in 2D plane.
+    rotateX() will rotate it in x direction,its height will decrease and after certain limit box will vanish.
+    rotateY() will rotate it in y direction, its width will decrease and after certain limit box will vanish
+    */
+    transform: rotateZ(-20deg);
+}
+.three{
+    transform: translateX(60px) translateY(-50px);
+}
+.four{
+    transform: rotate(65deg) translateX(200px);
+}
+.five{
+    /*skew is used to make parallelogram, diamond*/
+    transform: skewX(-50deg) skewY(40deg);
+}
+.six{
+    /*diamond shape...if we put 45 45 deg then it will convert it into a straight line so it vanishes from the web pages.*/
+    transform: skew(30deg, 30deg);
+}
