@@ -1,0 +1,58 @@
+div.container{
+    margin: 20px;
+    width:700px;
+    height:400px;
+    /*by default there is gap b/w block*/
+    /*can be removed either by font size 0 or no gaps while writing divs no /n no space in html file.*/
+    background-color:lightpink ;
+}
+div.item{
+    height:50px;
+    width:50px;  
+    margin:20px ; 
+    background-color: darkcyan;
+    border:solid black 1px;
+    display:inline-block;
+    animation: bounce 2s;
+    animation-iteration-count: infinite;
+}
+/* time at which they reach the bottom is same and the time at which they reach at top is same*/
+div.one{
+    animation-timing-function: ease-in;
+    /*ease-in:starts slow but it ends fast!!*/
+}
+div.two{
+    animation-timing-function: ease-out;
+    /*starts fast and ends slowly!!*/
+}
+div.three{
+    animation-timing-function: ease-out;
+}
+div.four{
+    animation-timing-function: ease-in-out;
+    /*it is default one : it starts slow , becomes fast in the middle
+    and ends slow!!*/
+}
+div.five{
+    animation-timing-function: cubic-bezier();
+}
+div.six{
+    animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+}
+div.seven{
+    animation-timing-function: linear;
+    /*moves at constant speed*/
+}
+@keyframes bounce {
+    0%{
+       /*transform: scale(2);*/
+    }
+    50%{
+        transform: translateY(300px);
+        background-color: dodgerblue;
+    }
+    100%{
+       /* transform: scale(2);
+        background-color: deeppink;*/
+    }
+}
