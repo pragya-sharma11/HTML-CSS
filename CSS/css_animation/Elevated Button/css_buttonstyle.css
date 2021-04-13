@@ -1,0 +1,24 @@
+div.button{
+    background-color: peru;
+    width:200px;
+    font-size: 30px;
+    
+    height: 90px;
+    padding: 50px;
+    color:white;
+    font-weight: bold;
+    margin:30px;
+    border-radius: 20px;
+    box-shadow: gray 10px 10px 10px;
+    transition: 0.8s;
+}
+div.button:hover{
+    transform:translate(-10px,-10px);
+    box-shadow: gray 20px 20px 20px;
+    transition: 0.5s;
+}
+div.button:active{
+    transform: translate(10px, 10px);
+    box-shadow: orange 20px 20px 30px;
+    transition: 0.01s;
+}
