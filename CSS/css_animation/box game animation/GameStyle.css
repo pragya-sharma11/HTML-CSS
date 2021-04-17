@@ -1,0 +1,68 @@
+body{
+    background: black;
+}
+div.game{
+    margin: 50px;
+    background-color:rgb(182, 238, 238) ;
+    border:black dotted 2px;
+    height: 500px;
+    width: 600px;
+    color: white;
+}
+div.box{
+    display:inline-block;
+    height:50px;
+    width:50px;
+    border:solid black 1px;
+    
+}
+div.player{
+    background-color: blue ;
+    border-radius: 5px;
+    padding:  3px ;
+    box-shadow:rgb(109, 109, 221) 3px 3px 3px ;
+    margin:10px;
+    transform:translateY(225px);
+    animation: move 4s infinite;
+    animation-play-state: paused;
+}
+div.game:active .player{
+    animation-play-state: running;
+}
+div.enemy{
+    background-color:peru;
+    margin-left: 30px;
+    padding:  3px 5px 3px;
+    animation-name: bounce ;
+    animation-timing-function: ease-in-out ;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    box-shadow:rgb(236, 195, 154) 3px 3px 3px ;
+}
+div.enemy.one{
+    animation-duration: 3s;
+}
+div.enemy.two{
+    animation-duration: 5s;
+}
+
+div.enemy.three{
+    animation-duration: 2s;
+}
+div.enemy.four{
+    animation-duration: 5s;
+}
+@keyframes bounce{
+    50%{
+        transform: translateY(430px);
+    }
+}
+@keyframes move {
+    50%{
+        transform:translateX(490px) translateY(225px);
+    }
+    
+}
+div.player:active{
+    transform: translate(100px , 225px) ;
+}
